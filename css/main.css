@@ -1,0 +1,136 @@
+:root {
+  --primary-color: hsl(277, 64%, 61%);
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --head-color: hsl(0, 0%, 100%);
+  --para-color: hsla(0, 0%, 100%, 0.75);
+  --stat-head-color: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  margin: 0;
+  background: var(--main-bg);
+  color: var(--para-color);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+body .hero {
+  background-color: var(--card-bg);
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 10px;
+  padding-bottom: 2em;
+}
+
+body .hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .hero .img section {
+  background: var(--primary-color);
+}
+
+body .hero .img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body .hero .content {
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+}
+
+body .hero .content p {
+  line-height: 2em;
+}
+
+body .hero h1 {
+  font-size: 2em;
+  font-family: 'Inter', sans-serif;
+  color: var(--head-color);
+}
+
+body .hero h1 .insight {
+  color: var(--primary-color);
+}
+
+body .hero .stats .companies, body .hero .stats .templates, body .hero .stats .queries {
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+}
+
+body .hero .stats h1 {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body .hero {
+    padding-bottom: 0;
+    width: 1400px;
+  }
+  body .hero .content p {
+    font-size: 0.95em;
+  }
+  body .hero .container {
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.6em;
+  }
+  body .hero .container .img img {
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  body .hero .container .left-col {
+    width: 50%;
+    text-align: left;
+  }
+  body .hero .container .left-col .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .hero .container .left-col .stats .templates, body .hero .container .left-col .stats .companies, body .hero .container .left-col .stats .queries {
+    font-size: 0.7em;
+  }
+  body .hero .container .right-col {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
