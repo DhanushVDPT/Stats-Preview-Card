@@ -7,7 +7,6 @@
     --stat-head-color: hsla(0, 0%, 100%, 0.6);
 }
 
-
 body{
     margin: 0;
     background: var(--main-bg);
@@ -67,6 +66,12 @@ body{
 }
 
 @media only screen and (min-width: 1440px) {
+    html{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     body{
         width: 1440px;
         margin: auto;
