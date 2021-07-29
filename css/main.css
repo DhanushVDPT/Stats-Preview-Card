@@ -39,10 +39,6 @@ body .hero .container {
   text-align: center;
 }
 
-body .hero .img section {
-  background: var(--primary-color);
-}
-
 body .hero .img img {
   width: 100%;
   border-top-left-radius: 10px;
@@ -75,6 +71,16 @@ body .hero .stats .companies, body .hero .stats .templates, body .hero .stats .q
 
 body .hero .stats h1 {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    text-align: center;
+  }
+  body .hero {
+    width: 520px;
+    margin: 2em auto;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

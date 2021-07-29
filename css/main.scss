@@ -28,14 +28,10 @@ body{
             text-align: center;
         }
         .img{
-            section{
-                background: var(--primary-color);
-            }
             img{
                 width: 100%;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
-                
             }
         }
         .content{
@@ -61,6 +57,22 @@ body{
             h1{
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    body{
+        text-align: center;
+        .hero{
+            width: 520px;
+            margin: 2em auto;
+            // .img{
+            //     width: 100%;
+            //     img{
+            //         width: 100%;
+            //     }
+            // }
         }
     }
 }
