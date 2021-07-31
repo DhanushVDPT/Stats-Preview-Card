@@ -39,8 +39,31 @@ body .hero .container {
   text-align: center;
 }
 
+body .hero .img {
+  position: relative;
+}
+
+body .hero .img p {
+  position: absolute;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100%, auto);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 body .hero .img img {
   width: 100%;
+  display: block;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
