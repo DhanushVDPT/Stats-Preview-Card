@@ -149,6 +149,10 @@ body .hero .stats h1 {
             justify-content: center;
     font-size: 1.6em;
   }
+  body .hero .container .img p{
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
   body .hero .container .img img {
     display: block;
     padding-bottom: 0;
